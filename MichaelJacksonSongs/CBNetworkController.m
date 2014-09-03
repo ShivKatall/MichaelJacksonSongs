@@ -70,9 +70,7 @@
             }
             
             [tracks addObject:newTrack];
-            
-//            NSLog(@"%@", newTrack);
-            
+                        
         }];
         
         completionBlock (tracks);

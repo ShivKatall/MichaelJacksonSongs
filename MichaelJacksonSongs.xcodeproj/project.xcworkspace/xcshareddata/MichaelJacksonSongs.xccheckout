@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BE1C7678-31FF-49F0-8790-84CD0341EAB0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MichaelJacksonSongs</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1E92918A-29F8-4FD4-A97C-225121E50E44</key>
+		<string>ssh://github.com/ShivKatall/MichaelJacksonSongs.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MichaelJacksonSongs.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1E92918A-29F8-4FD4-A97C-225121E50E44</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/ShivKatall/MichaelJacksonSongs.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1E92918A-29F8-4FD4-A97C-225121E50E44</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1E92918A-29F8-4FD4-A97C-225121E50E44</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MichaelJacksonSongs</string>
+		</dict>
+	</array>
+</dict>
+</plist>

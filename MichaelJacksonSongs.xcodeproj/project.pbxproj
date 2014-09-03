@@ -23,6 +23,7 @@
 		3D46024B19B7B22B00BA99AA /* MichaelJacksonSongsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D46024A19B7B22B00BA99AA /* MichaelJacksonSongsTests.m */; };
 		3D46025919B7B2B900BA99AA /* CBNetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D46025819B7B2B900BA99AA /* CBNetworkController.m */; };
 		3D46025C19B7B2D700BA99AA /* CBTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D46025B19B7B2D700BA99AA /* CBTrack.m */; };
+		3D46025F19B7CA8000BA99AA /* CBTrackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D46025E19B7CA8000BA99AA /* CBTrackCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		3D46025819B7B2B900BA99AA /* CBNetworkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBNetworkController.m; sourceTree = "<group>"; };
 		3D46025A19B7B2D700BA99AA /* CBTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBTrack.h; sourceTree = "<group>"; };
 		3D46025B19B7B2D700BA99AA /* CBTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBTrack.m; sourceTree = "<group>"; };
+		3D46025D19B7CA8000BA99AA /* CBTrackCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBTrackCell.h; sourceTree = "<group>"; };
+		3D46025E19B7CA8000BA99AA /* CBTrackCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBTrackCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +164,8 @@
 				3D46023119B7B22B00BA99AA /* Main.storyboard */,
 				3D46023419B7B22B00BA99AA /* CBViewController.h */,
 				3D46023519B7B22B00BA99AA /* CBViewController.m */,
+				3D46025D19B7CA8000BA99AA /* CBTrackCell.h */,
+				3D46025E19B7CA8000BA99AA /* CBTrackCell.m */,
 				3D46023719B7B22B00BA99AA /* Images.xcassets */,
 			);
 			name = View;
@@ -288,6 +293,7 @@
 				3D46022C19B7B22B00BA99AA /* main.m in Sources */,
 				3D46023019B7B22B00BA99AA /* CBAppDelegate.m in Sources */,
 				3D46023619B7B22B00BA99AA /* CBViewController.m in Sources */,
+				3D46025F19B7CA8000BA99AA /* CBTrackCell.m in Sources */,
 				3D46025919B7B2B900BA99AA /* CBNetworkController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
