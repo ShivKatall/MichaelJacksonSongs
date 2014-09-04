@@ -10,7 +10,7 @@
 
 @interface CBTrackCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UIImageView *artwork;
+@property (weak, nonatomic) IBOutlet UIImageView *thumbnail;
 @property (weak, nonatomic) IBOutlet UILabel *artistLabel;
 @property (weak, nonatomic) IBOutlet UILabel *collectionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *trackLabel;

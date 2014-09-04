@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D29C11A19B7E10500ADDDE5 /* CBDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D29C11919B7E10500ADDDE5 /* CBDetailViewController.m */; };
 		3D46022019B7B22B00BA99AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D46021F19B7B22B00BA99AA /* Foundation.framework */; };
 		3D46022219B7B22B00BA99AA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D46022119B7B22B00BA99AA /* CoreGraphics.framework */; };
 		3D46022419B7B22B00BA99AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D46022319B7B22B00BA99AA /* UIKit.framework */; };
@@ -14,7 +15,7 @@
 		3D46022C19B7B22B00BA99AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D46022B19B7B22B00BA99AA /* main.m */; };
 		3D46023019B7B22B00BA99AA /* CBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D46022F19B7B22B00BA99AA /* CBAppDelegate.m */; };
 		3D46023319B7B22B00BA99AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D46023119B7B22B00BA99AA /* Main.storyboard */; };
-		3D46023619B7B22B00BA99AA /* CBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D46023519B7B22B00BA99AA /* CBViewController.m */; };
+		3D46023619B7B22B00BA99AA /* CBMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D46023519B7B22B00BA99AA /* CBMasterViewController.m */; };
 		3D46023819B7B22B00BA99AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D46023719B7B22B00BA99AA /* Images.xcassets */; };
 		3D46023F19B7B22B00BA99AA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D46023E19B7B22B00BA99AA /* XCTest.framework */; };
 		3D46024019B7B22B00BA99AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D46021F19B7B22B00BA99AA /* Foundation.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D29C11819B7E10500ADDDE5 /* CBDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBDetailViewController.h; sourceTree = "<group>"; };
+		3D29C11919B7E10500ADDDE5 /* CBDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBDetailViewController.m; sourceTree = "<group>"; };
 		3D46021C19B7B22B00BA99AA /* MichaelJacksonSongs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MichaelJacksonSongs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D46021F19B7B22B00BA99AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3D46022119B7B22B00BA99AA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,8 +51,8 @@
 		3D46022E19B7B22B00BA99AA /* CBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBAppDelegate.h; sourceTree = "<group>"; };
 		3D46022F19B7B22B00BA99AA /* CBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBAppDelegate.m; sourceTree = "<group>"; };
 		3D46023219B7B22B00BA99AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3D46023419B7B22B00BA99AA /* CBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBViewController.h; sourceTree = "<group>"; };
-		3D46023519B7B22B00BA99AA /* CBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBViewController.m; sourceTree = "<group>"; };
+		3D46023419B7B22B00BA99AA /* CBMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBMasterViewController.h; sourceTree = "<group>"; };
+		3D46023519B7B22B00BA99AA /* CBMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBMasterViewController.m; sourceTree = "<group>"; };
 		3D46023719B7B22B00BA99AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3D46023D19B7B22B00BA99AA /* MichaelJacksonSongsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MichaelJacksonSongsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D46023E19B7B22B00BA99AA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -162,10 +165,12 @@
 			isa = PBXGroup;
 			children = (
 				3D46023119B7B22B00BA99AA /* Main.storyboard */,
-				3D46023419B7B22B00BA99AA /* CBViewController.h */,
-				3D46023519B7B22B00BA99AA /* CBViewController.m */,
+				3D46023419B7B22B00BA99AA /* CBMasterViewController.h */,
+				3D46023519B7B22B00BA99AA /* CBMasterViewController.m */,
 				3D46025D19B7CA8000BA99AA /* CBTrackCell.h */,
 				3D46025E19B7CA8000BA99AA /* CBTrackCell.m */,
+				3D29C11819B7E10500ADDDE5 /* CBDetailViewController.h */,
+				3D29C11919B7E10500ADDDE5 /* CBDetailViewController.m */,
 				3D46023719B7B22B00BA99AA /* Images.xcassets */,
 			);
 			name = View;
@@ -292,7 +297,8 @@
 				3D46025C19B7B2D700BA99AA /* CBTrack.m in Sources */,
 				3D46022C19B7B22B00BA99AA /* main.m in Sources */,
 				3D46023019B7B22B00BA99AA /* CBAppDelegate.m in Sources */,
-				3D46023619B7B22B00BA99AA /* CBViewController.m in Sources */,
+				3D46023619B7B22B00BA99AA /* CBMasterViewController.m in Sources */,
+				3D29C11A19B7E10500ADDDE5 /* CBDetailViewController.m in Sources */,
 				3D46025F19B7CA8000BA99AA /* CBTrackCell.m in Sources */,
 				3D46025919B7B2B900BA99AA /* CBNetworkController.m in Sources */,
 			);
@@ -499,6 +505,7 @@
 				3D46025019B7B22B00BA99AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D46025119B7B22B00BA99AA /* Build configuration list for PBXNativeTarget "MichaelJacksonSongsTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +514,7 @@
 				3D46025319B7B22B00BA99AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

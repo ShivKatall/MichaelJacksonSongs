@@ -6,13 +6,14 @@
 //  Copyright (c) 2014 Cole Bratcher. All rights reserved.
 //
 
-#import "CBViewController.h"
+#import "CBMasterViewController.h"
 #import "CBAppDelegate.h"
 #import "CBNetworkController.h"
 #import "CBTrack.h"
 #import "CBTrackCell.h"
+#import "CBDetailViewController.h"
 
-@interface CBViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface CBMasterViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) CBAppDelegate *appDelegate;
 @property (nonatomic, strong) CBNetworkController *networkController;
@@ -21,7 +22,7 @@
 
 @end
 
-@implementation CBViewController
+@implementation CBMasterViewController
 
 - (void)viewDidLoad
 {
@@ -59,6 +60,18 @@
     });
 }
 
+
+#pragma mark Segues
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"detailSegue"]) {
+        CBDetailViewController *destination = segue.destinationViewController;
+        NSIndexPath *indexPath      = [_tracksTableView indexPathForSelectedRow];
+        destination.currentTrack  = _currentTracks [indexPath.row];
+    }
+}
+
 #pragma mark UITableView Delegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -76,7 +89,22 @@
     trackCell.collectionLabel.text  = [NSString stringWithFormat:@"%@", track.collectionName];
     trackCell.trackLabel.text       = [NSString stringWithFormat:@"%@", track.trackName];
     
+    // Photos
+    if (track.image) {
+        trackCell.thumbnail.image = track.image;
+    } else {
+        [track downloadImageWithCompletionBlock:^{
+            [tableView reloadRowsAtIndexPaths:@[indexPath]
+                             withRowAnimation:UITableViewRowAnimationFade];
+        }];
+    }
+
     return trackCell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end

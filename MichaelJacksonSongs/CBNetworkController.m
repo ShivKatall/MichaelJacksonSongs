@@ -66,7 +66,15 @@
                 newTrack.collectionName = [obj objectForKey:@"collectionName"];
             }
             if ([obj objectForKey:@"trackName"] != [NSNull null]) {
-                newTrack.trackName = [obj objectForKey:@"trackName"];
+                newTrack.trackName =[obj objectForKey:@"trackName"];
+            }
+            if ([obj objectForKey:@"primaryGenreName"] != [NSNull null]) {
+                newTrack.genre = [obj objectForKey:@"primaryGenreName"];
+            }
+            if ([[obj objectForKey:@"trackExplicitness"] isEqualToString:@"explicit"]) {
+                newTrack.explicity = @"Explicit";
+            } else {
+                newTrack.explicity = @"Not Explicit";
             }
             
             [tracks addObject:newTrack];

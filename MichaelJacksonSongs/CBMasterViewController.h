@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CBViewController : UIViewController
+@interface CBMasterViewController : UIViewController
 
 @end
